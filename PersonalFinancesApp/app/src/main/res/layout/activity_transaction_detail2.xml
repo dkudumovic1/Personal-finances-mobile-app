@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="100dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="100dp"
+    android:text="Transaction"
+    android:textAlignment="center"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:textColor="#3B50CA"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/textView11"
+    android:layout_width="0dp"
+    android:layout_height="45dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="24dp"
+    android:text="Title: "
+    app:layout_constraintEnd_toStartOf="@+id/title"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="101dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="Amount: "
+        app:layout_constraintEnd_toStartOf="@+id/amount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+    android:id="@+id/textView16"
+    android:layout_width="0dp"
+    android:layout_height="45dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="32dp"
+    android:text="ItemDescription: "
+    app:layout_constraintEnd_toStartOf="@+id/itemDescription"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinnerType" />
+
+<TextView
+    android:id="@+id/textView17"
+    android:layout_width="0dp"
+    android:layout_height="42dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="24dp"
+    android:text="transactionInterval: "
+    app:layout_constraintEnd_toStartOf="@+id/transactionInterval"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+<TextView
+    android:id="@+id/textView18"
+    android:layout_width="0dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="24dp"
+    android:text="endDate: "
+    app:layout_constraintEnd_toStartOf="@+id/endDate"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+<EditText
+    android:id="@+id/title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="32dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="date|datetime|textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+<EditText
+    android:id="@+id/amount"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="32dp"
+    android:ems="10"
+    android:inputType="number"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/date" />
+
+<Spinner
+    android:id="@+id/spinnerType"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="32dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/amount" />
+
+<EditText
+    android:id="@+id/itemDescription"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="32dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinnerType" />
+
+<EditText
+    android:id="@+id/transactionInterval"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="32dp"
+    android:ems="10"
+    android:inputType="number"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/itemDescription" />
+
+<EditText
+    android:id="@+id/endDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="32dp"
+    android:ems="10"
+    android:inputType="date"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/transactionInterval" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="0dp"
+    android:layout_height="42dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="24dp"
+    android:text="Date: "
+    app:layout_constraintEnd_toStartOf="@+id/date"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="60dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="60dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endDate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ba.unsa.etf.rma.rma20kudumovicdzeneta19_test2.MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="250dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="250dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMonth"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="120dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerFilter" />
+
+    <Spinner
+        android:id="@+id/spinnerSort"
+        android:layout_width="272dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="#2F5F85"
+        android:fadingEdge="horizontal|vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMonth" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="303dp"
+        android:layout_height="299dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/holo_blue_light"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSort" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRight"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewMonth"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerFilter"
+        app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLeft"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMonth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerFilter"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <Button
+        android:id="@+id/buttonAddTransaction"
+        android:layout_width="210dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="24dp"
+        android:text="Add transaction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listView" />
+
+    <Button
+        android:id="@+id/bazaID"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="db"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerFilter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
